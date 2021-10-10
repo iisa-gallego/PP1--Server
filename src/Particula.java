@@ -7,7 +7,7 @@ public class Particula implements Runnable {
 		private int vel;
 		private PApplet app;
 
-		public void Particula (int posX, int posY, PApplet app, int velocity) {
+		public  Particula (int posX, int posY, PApplet app, int velocity) {
 			this.posX = posX;
 			this.posY = posY;
 			this.app = app;
@@ -21,8 +21,8 @@ public class Particula implements Runnable {
 		}
 
 		public void move() {
-			posX += app.random(-2, 1);
-			posY += app.random(-2, 1);
+			posX += app.random(2, 1);
+			posY += app.random(1, 2);
 
 		}
 
